@@ -11,6 +11,10 @@ body {
   font-family: "Jost", sans-serif;
 }
 
+body.hidden {
+  overflow: hidden;
+}
+
 :focus {
   outline: none;
 }
@@ -455,7 +459,7 @@ ul, ol {
   margin-left: 40px;
 }
 
-.modal {
+.modal, .modal-call {
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -473,7 +477,7 @@ ul, ol {
   overflow-y: auto;
 }
 
-.modal.active {
+.modal.active, .modal-call.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
